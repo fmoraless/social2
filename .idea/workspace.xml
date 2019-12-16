@@ -14,6 +14,9 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
@@ -139,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576435928269</updated>
       <workItem from="1576435931933" duration="53000" />
-      <workItem from="1576435987422" duration="170000" />
+      <workItem from="1576435987422" duration="707000" />
     </task>
     <servers />
   </component>
