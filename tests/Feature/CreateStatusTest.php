@@ -43,4 +43,34 @@ class CreateStatusTest extends TestCase
             'body' => 'Mi primer status'
         ]);
     }
+
+    /** @test */
+    public function a_status_requires_a_body()
+    {
+        $user = factory(User::class)->create();
+        $this->actingAs($user);
+
+        // 2. When => Cuando (realizamos la accion) cuando hace un post request a status
+        $response = $this->postJson(route('statuses.store'), ['body' => '']);
+
+        $response->assertStatus(422);
+        $response->assertJsonStructure([
+           'message', 'errors' => ['body']
+        ]);
+    }
+
+    /** @test */
+    public function a_status_body_requires_a_minimum_length()
+    {
+        $user = factory(User::class)->create();
+        $this->actingAs($user);
+
+        // 2. When => Cuando (realizamos la accion) cuando hace un post request a status
+        $response = $this->postJson(route('statuses.store'), ['body' => 'asdf']);
+
+        $response->assertStatus(422);
+        $response->assertJsonStructure([
+            'message', 'errors' => ['body']
+        ]);
+    }
 }
