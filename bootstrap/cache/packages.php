@@ -34,4 +34,11 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
+  'laravel/dusk' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Dusk\\DuskServiceProvider',
+    ),
+  ),
 );
