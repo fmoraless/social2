@@ -1,0 +1,8 @@
+[
+    {
+        "level": "SEVERE",
+        "message": "http:\/\/127.0.0.1:8000\/js\/app.js 1878:33 Uncaught TypeError: Cannot read property 'data' of undefined",
+        "source": "javascript",
+        "timestamp": 1577554494617
+    }
+]
