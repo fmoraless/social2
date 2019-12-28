@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
+    <meta name="user" content="<?php echo e(Auth::user()); ?>">
     <link rel="stylesheet" href="<?php echo e(mix('css/app.css')); ?>">
     <title>SocialApp</title>
 </head>
