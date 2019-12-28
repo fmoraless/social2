@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ec517d31-6e79-48df-b6ab-65430e0f4433" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Status.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Status.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/cache/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/9a/f2/9af2ca503c720043620e0b603475e5aaa29e88b6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/ad/d1/add185d138d6e7a05b3f1baccec80c8c04efeb11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/J7w1qQUru56P1tUvNaqAaLY9PH2WHRowUvyFgGxx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/TisUsD2yv1aGktHPXEPHjrfVxTfyACDQM8nCDwe2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Browser/screenshots/failure-Tests_Browser_UsersCanSeeAllStatusesTest_users_can_see_all_statuses_on_the_homepage-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Browser/screenshots/failure-Tests_Browser_UsersCanSeeAllStatusesTest_users_can_see_all_statuses_on_the_homepage-0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/Models/StatusTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Models/StatusTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/StatusResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/StatusResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/StatusesList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/StatusesList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ETNIyXu3C7m0OHlU64jtWaeJ8gehWEsHeAjzpRo9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Http/Resources/StatusResourceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Http/Resources/StatusResourceTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
@@ -169,13 +165,13 @@
       <recent name="C:\xampp\htdocs\social" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.UsersCanSeeAllStatusesTest.users_can_see_all_statuses_on_the_homepage">
+  <component name="RunManager" selected="PHPUnit.StatusResourceTest.a_status_resources_must_have_the_necessary_fields">
     <configuration name="CanLikeStatusesTest.guests_users_can_not_like_statuses" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\CanLikeStatusesTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CanLikeStatusesTest.php" method="guests_users_can_not_like_statuses" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CreateStatusTest.a_status_body_requires_a_minimum_length" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\CreateStatusTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CreateStatusTest.php" method="a_status_body_requires_a_minimum_length" scope="Method" />
+    <configuration name="StatusResourceTest.a_status_resources_must_have_the_necessary_fields" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\Http\Resources\StatusResourceTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/Http/Resources/StatusResourceTest.php" method="a_status_resources_must_have_the_necessary_fields" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="StatusTest.a_status_can_be_liked_once" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -196,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.StatusResourceTest.a_status_resources_must_have_the_necessary_fields" />
         <item itemvalue="PHPUnit.UsersCanSeeAllStatusesTest.users_can_see_all_statuses_on_the_homepage" />
         <item itemvalue="PHPUnit.StatusTest.a_status_has_many_likes" />
         <item itemvalue="PHPUnit.StatusTest.a_status_can_be_liked_once" />
         <item itemvalue="PHPUnit.CanLikeStatusesTest.guests_users_can_not_like_statuses" />
-        <item itemvalue="PHPUnit.CreateStatusTest.a_status_body_requires_a_minimum_length" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +237,7 @@
       <workItem from="1577101900297" duration="622000" />
       <workItem from="1577154041106" duration="3557000" />
       <workItem from="1577327297995" duration="1569000" />
-      <workItem from="1577415285327" duration="16479000" />
+      <workItem from="1577415285327" duration="19849000" />
     </task>
     <task id="LOCAL-00001" summary="Comit inicial">
       <created>1576457034786</created>
@@ -278,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577497297813</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Hasta Obteniendo usuario autenticado y Test con Likes.">
+      <created>1577554821981</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577554821981</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +306,8 @@
     <MESSAGE value="Reglas de validacion status." />
     <MESSAGE value="Hasta Login Test" />
     <MESSAGE value="Hasta usuario autenticado con Vue.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hasta usuario autenticado con Vue.js" />
+    <MESSAGE value="Hasta Obteniendo usuario autenticado y Test con Likes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Hasta Obteniendo usuario autenticado y Test con Likes." />
   </component>
   <component name="WindowStateProjectService">
     <state x="636" y="224" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577061380143">
@@ -322,34 +326,34 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="1025" y="162" key="#phpunit.xml/0.0.1920.1032@0.0.1920.1032" timestamp="1576457934957" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1577497293428">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1577554819216">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1577497293428" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1577554819216" />
     <state x="1372" y="417" key="FileChooserDialogImpl" timestamp="1577061330346">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="1372" y="417" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1577061330346" />
-    <state width="1864" height="440" key="GridCell.Tab.0.bottom" timestamp="1577554622663">
+    <state width="886" height="422" key="GridCell.Tab.0.bottom" timestamp="1577559442703">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="886" height="370" key="GridCell.Tab.0.bottom/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1577465959188" />
-    <state width="1864" height="440" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1577554622663" />
-    <state width="1864" height="440" key="GridCell.Tab.0.center" timestamp="1577554622663">
+    <state width="886" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1577559442703" />
+    <state width="886" height="422" key="GridCell.Tab.0.center" timestamp="1577559442703">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="886" height="370" key="GridCell.Tab.0.center/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1577465959188" />
-    <state width="1864" height="440" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1577554622663" />
-    <state width="1864" height="440" key="GridCell.Tab.0.left" timestamp="1577554622663">
+    <state width="886" height="422" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1577559442703" />
+    <state width="886" height="422" key="GridCell.Tab.0.left" timestamp="1577559442703">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="886" height="370" key="GridCell.Tab.0.left/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1577465959188" />
-    <state width="1864" height="440" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1577554622663" />
-    <state width="1864" height="440" key="GridCell.Tab.0.right" timestamp="1577554622663">
+    <state width="886" height="422" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1577559442703" />
+    <state width="886" height="422" key="GridCell.Tab.0.right" timestamp="1577559442703">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="886" height="370" key="GridCell.Tab.0.right/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1577465959188" />
-    <state width="1864" height="440" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1577554622663" />
+    <state width="886" height="422" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1577559442703" />
     <state x="594" y="78" key="SettingsEditor" timestamp="1577064334064">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -358,15 +362,15 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="623" height="498" key="SwitcherDM/0.0.1920.1032@0.0.1920.1032" timestamp="1576468103828" />
-    <state x="460" y="153" key="Vcs.Push.Dialog.v2" timestamp="1577497326467">
+    <state x="460" y="153" key="Vcs.Push.Dialog.v2" timestamp="1577554832093">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="460" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1577497326467" />
-    <state x="1033" y="0" width="840" height="1030" key="search.everywhere.popup" timestamp="1577550238857">
+    <state x="460" y="153" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1577554832093" />
+    <state x="1033" y="0" width="840" height="1030" key="search.everywhere.popup" timestamp="1577558938775">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="1033" y="0" width="840" height="1030" key="search.everywhere.popup/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1577464050872" />
-    <state x="1033" y="0" width="840" height="1030" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1577550238857" />
+    <state x="1033" y="0" width="840" height="1030" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1577558938775" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/social@StatusResourceTest_a_status_resources_must_have_the_necessary_fields.xml" NAME="StatusResourceTest.a_status_resources_must_have_the_necessary_fields Coverage Results" MODIFIED="1577062564025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

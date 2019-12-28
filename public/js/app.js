@@ -37432,7 +37432,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", {
                 staticClass: "small text-muted",
-                domProps: { textContent: _vm._s(status.created_at) }
+                domProps: { textContent: _vm._s(status.ago) }
               })
             ])
           ]),

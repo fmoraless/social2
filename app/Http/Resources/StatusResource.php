@@ -18,8 +18,8 @@ class StatusResource extends JsonResource
             'body' => $this->body,
             'user_name' => $this->user_name,
             'user_avatar' => 'https://qph.fs.quoracdn.net/main-raw-56683409-ieynmjwbrbsfptmydklqcvwcoiisxiuj.jpeg',
-            //'ago' => $this->created_at->diffForHumans()
-            'created_at' => $this->created_at
+            'ago' => $this->created_at->diffForHumans()
+            //'created_at' => $this->created_at
         ];
     }
 }
