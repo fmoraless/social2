@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec517d31-6e79-48df-b6ab-65430e0f4433" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/StatusResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/StatusResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/sU5i9MCvEib51njDB1rf55Vwy3pzo1gFY7fMKYwy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/StatusesList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/StatusesList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ETNIyXu3C7m0OHlU64jtWaeJ8gehWEsHeAjzpRo9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/Http/Resources/StatusResourceTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Http/Resources/StatusResourceTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +233,7 @@
       <workItem from="1577101900297" duration="622000" />
       <workItem from="1577154041106" duration="3557000" />
       <workItem from="1577327297995" duration="1569000" />
-      <workItem from="1577415285327" duration="19849000" />
+      <workItem from="1577415285327" duration="20264000" />
     </task>
     <task id="LOCAL-00001" summary="Comit inicial">
       <created>1576457034786</created>
@@ -281,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577554821981</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cambio created_at por ago.">
+      <created>1577560332949</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1577560332949</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +310,8 @@
     <MESSAGE value="Hasta Login Test" />
     <MESSAGE value="Hasta usuario autenticado con Vue.js" />
     <MESSAGE value="Hasta Obteniendo usuario autenticado y Test con Likes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Hasta Obteniendo usuario autenticado y Test con Likes." />
+    <MESSAGE value="Cambio created_at por ago." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambio created_at por ago." />
   </component>
   <component name="WindowStateProjectService">
     <state x="636" y="224" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577061380143">
@@ -326,10 +330,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="1025" y="162" key="#phpunit.xml/0.0.1920.1032@0.0.1920.1032" timestamp="1576457934957" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1577554819216">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1577560329736">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1577554819216" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1577560329736" />
     <state x="1372" y="417" key="FileChooserDialogImpl" timestamp="1577061330346">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
